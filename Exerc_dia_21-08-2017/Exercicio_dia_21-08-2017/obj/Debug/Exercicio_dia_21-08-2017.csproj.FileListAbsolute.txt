@@ -1,6 +1,0 @@
-c:\users\tl_va\documents\visual studio 2017\Projects\Exercicio_dia_21-08-2017\Exercicio_dia_21-08-2017\bin\Debug\Exercicio_dia_21-08-2017.exe.config
-c:\users\tl_va\documents\visual studio 2017\Projects\Exercicio_dia_21-08-2017\Exercicio_dia_21-08-2017\bin\Debug\Exercicio_dia_21-08-2017.exe
-c:\users\tl_va\documents\visual studio 2017\Projects\Exercicio_dia_21-08-2017\Exercicio_dia_21-08-2017\bin\Debug\Exercicio_dia_21-08-2017.pdb
-c:\users\tl_va\documents\visual studio 2017\Projects\Exercicio_dia_21-08-2017\Exercicio_dia_21-08-2017\obj\Debug\Exercicio_dia_21-08-2017.csprojResolveAssemblyReference.cache
-c:\users\tl_va\documents\visual studio 2017\Projects\Exercicio_dia_21-08-2017\Exercicio_dia_21-08-2017\obj\Debug\Exercicio_dia_21-08-2017.exe
-c:\users\tl_va\documents\visual studio 2017\Projects\Exercicio_dia_21-08-2017\Exercicio_dia_21-08-2017\obj\Debug\Exercicio_dia_21-08-2017.pdb
