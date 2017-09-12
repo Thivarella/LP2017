@@ -39,7 +39,7 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.BtnVisualizar = new System.Windows.Forms.Button();
-            this.btnCancelCadProd = new System.Windows.Forms.Button();
+            this.btnRmProd = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.TextBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -202,7 +202,7 @@
             // 
             // splitContainer5.Panel2
             // 
-            this.splitContainer5.Panel2.Controls.Add(this.btnCancelCadProd);
+            this.splitContainer5.Panel2.Controls.Add(this.btnRmProd);
             this.splitContainer5.Size = new System.Drawing.Size(508, 75);
             this.splitContainer5.SplitterDistance = 81;
             this.splitContainer5.TabIndex = 0;
@@ -222,20 +222,20 @@
             this.BtnVisualizar.UseVisualStyleBackColor = true;
             this.BtnVisualizar.Click += new System.EventHandler(this.BtnVisualizar_Click);
             // 
-            // btnCancelCadProd
+            // btnRmProd
             // 
-            this.btnCancelCadProd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnCancelCadProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCancelCadProd.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelCadProd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCancelCadProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelCadProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelCadProd.Location = new System.Drawing.Point(0, 0);
-            this.btnCancelCadProd.Name = "btnCancelCadProd";
-            this.btnCancelCadProd.Size = new System.Drawing.Size(423, 75);
-            this.btnCancelCadProd.TabIndex = 16;
-            this.btnCancelCadProd.Text = "Cancelar";
-            this.btnCancelCadProd.UseVisualStyleBackColor = true;
+            this.btnRmProd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRmProd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRmProd.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRmProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRmProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRmProd.Location = new System.Drawing.Point(0, 0);
+            this.btnRmProd.Name = "btnRmProd";
+            this.btnRmProd.Size = new System.Drawing.Size(423, 75);
+            this.btnRmProd.TabIndex = 16;
+            this.btnRmProd.Text = "Remover";
+            this.btnRmProd.UseVisualStyleBackColor = true;
+            this.btnRmProd.Click += new System.EventHandler(this.btnRmProd_Click);
             // 
             // splitContainer1
             // 
@@ -331,6 +331,6 @@
         private System.Windows.Forms.Button BtnNovo;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button BtnVisualizar;
-        private System.Windows.Forms.Button btnCancelCadProd;
+        private System.Windows.Forms.Button btnRmProd;
     }
 }

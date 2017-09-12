@@ -41,7 +41,7 @@
             this.txtHorario = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textData = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -208,7 +208,7 @@
             this.panel2.Controls.Add(this.txtHorario);
             this.panel2.Controls.Add(this.button9);
             this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.textData);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.panel3);
@@ -246,12 +246,12 @@
             this.textBox5.Size = new System.Drawing.Size(419, 22);
             this.textBox5.TabIndex = 9;
             // 
-            // textBox4
+            // textData
             // 
-            this.textBox4.Location = new System.Drawing.Point(89, 107);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 8;
+            this.textData.Location = new System.Drawing.Point(89, 107);
+            this.textData.Name = "textData";
+            this.textData.Size = new System.Drawing.Size(100, 22);
+            this.textData.TabIndex = 8;
             // 
             // textBox2
             // 
@@ -378,7 +378,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textData;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox txtHorario;

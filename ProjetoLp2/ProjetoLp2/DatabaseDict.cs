@@ -11,6 +11,11 @@ namespace ProjetoLp2
     {
         private static Dictionary<long, Produto> lista = new Dictionary<long, Produto>();
 
+        public void Delete(long a)
+        {
+            lista.Remove(a);
+        }
+
         public void Delete()
         {
             throw new NotImplementedException();
@@ -40,8 +45,22 @@ namespace ProjetoLp2
             return prod;
         }
 
+        public void Read(long a)
+        {
+            CadProduto cad = new CadProduto();
+            cad.TextNomeProd.Text = lista[a].Nome;
+            cad.TextCodProd.Text = lista[a].Codigo.ToString();
+            cad.TextPrecoProd.Text = lista[a].Preco.ToString();
+            cad.TextQtdeProd.Text = lista[a].Quantidade.ToString();
+            cad.TextPrecoProd.Enabled = false;
+            cad.TextNomeProd.Enabled = false;
+            cad.TextQtdeProd.Enabled = false;
+            cad.ShowDialog();
+        }
+
         public void Read()
         {
+            throw new NotImplementedException();
         }
 
         public void Salvar(Produto a)
@@ -58,7 +77,6 @@ namespace ProjetoLp2
 
         public void Update(long a)
         {
-            a++;
             CadProduto cad = new CadProduto();
             cad.TextNomeProd.Text = lista[a].Nome;
             cad.TextCodProd.Text = lista[a].Codigo.ToString();

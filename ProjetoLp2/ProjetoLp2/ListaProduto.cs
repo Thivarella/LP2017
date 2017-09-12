@@ -15,42 +15,53 @@ namespace ProjetoLp2
         public ListaProduto()
         {
             InitializeComponent();
+            Refresh("");
         }
 
         private void BtnNovo_Click(object sender, EventArgs e)
         {
             CadProduto cad = new CadProduto();
             cad.ShowDialog();
-            BtnVisualizar.PerformClick();
+            Refresh("");
         }
 
         private void BtnVisualizar_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
+            long a = long.Parse(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString());
             DatabaseDict data = new DatabaseDict();
-            List<Produto> prod = data.ListAll("");
-            foreach (Produto ae in prod) {
-                dataGridView1.Rows.Add(ae.Codigo,ae.Nome,ae.Preco,ae.Quantidade);
-            }
+            data.Read(a);
         }
 
         private void TextBox1_KeyUp(object sender, KeyEventArgs e)
         {
             string nome = TextBox1.Text;
-            dataGridView1.Rows.Clear();
-            DatabaseDict data = new DatabaseDict();
-            List<Produto> prod = data.ListAll(nome);
-            foreach (Produto ae in prod) {
-                dataGridView1.Rows.Add(ae.Codigo, ae.Nome, ae.Preco, ae.Quantidade);
-            }
+            Refresh(nome);
         }
 
         private void BtnEdit_Click(object sender, EventArgs e)
         {
-            long a = long.Parse(dataGridView1.CurrentRow.Index.ToString());
+            long a = long.Parse(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString());
             DatabaseDict data = new DatabaseDict();
             data.Update(a);
-            BtnVisualizar.PerformClick();
+            Refresh("");
+        }
+
+        private void btnRmProd_Click(object sender, EventArgs e)
+        {
+            long a = long.Parse(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString());
+            DatabaseDict data = new DatabaseDict();
+            data.Delete(a);
+            Refresh("");
+        }
+
+        private void Refresh(String a)
+        {
+            dataGridView1.Rows.Clear();
+            DatabaseDict data = new DatabaseDict();
+            List<Produto> prod = data.ListAll(a);
+            foreach (Produto ae in prod) {
+                dataGridView1.Rows.Add(ae.Codigo, ae.Nome, ae.Preco, ae.Quantidade);
+            }
         }
     }
 }
